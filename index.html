@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title>C15110_West_Wits</title>
+        <title>C15110 West Wits</title>
     </head>
     <body>
         <div id="map">
@@ -52,9 +52,10 @@
         });
         measureControl.addTo(map);
         var bounds_group = new L.featureGroup([]);
-        var basemap0 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-});
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="www.kirchhoffsurveyors.co.za">Kirchhoff Professional Surveyors</a>,<a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 27
+        });
         basemap0.addTo(map);
         function setBounds() {
         }
@@ -96,7 +97,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 1.0, 
+                weight: 3.0, 
                 fillOpacity: 1,
                 fillColor: 'rgba(241,244,199,0.486275)',
             }
@@ -253,6 +254,8 @@
             text: 'Search',
         });
         osmGeocoder.addTo(map);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/C15110Coordinates_3.png" /> C15110 Coordinates': layer_C15110Coordinates_3,'<img src="legend/C15110Area_2.png" /> C15110 Area': layer_C15110Area_2,'<img src="legend/C15110ErfPortions_1.png" /> C15110 Erf Portions': layer_C15110ErfPortions_1,'<img src="legend/C15110FarmPortions_0.png" /> C15110 Farm Portions': layer_C15110FarmPortions_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
