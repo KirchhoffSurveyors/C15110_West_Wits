@@ -33,26 +33,24 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
         <script src="data/RandQuestSyndicateArea_0.js"></script>
-        <script src="data/RQSPointsWG27_1.js"></script>
-        <script src="data/RQSPointsWG29_2.js"></script>
-        <script src="data/TransmissionPipeline_3.js"></script>
-        <script src="data/DistributionPipeline_4.js"></script>
-        <script src="data/SouthReefOpencast_5.js"></script>
-        <script src="data/RugbyClubMRL_6.js"></script>
-        <script src="data/RugbyClubMainReef_7.js"></script>
-        <script src="data/MonaLiza_8.js"></script>
-        <script src="data/MiningPermitArea_9.js"></script>
-        <script src="data/MainReefOpencast_10.js"></script>
-        <script src="data/KimberleyReefWest_11.js"></script>
-        <script src="data/KimberleyReefEast_12.js"></script>
-        <script src="data/SouthReefOutcrop_13.js"></script>
-        <script src="data/MRL_14.js"></script>
-        <script src="data/MainReefOutcrop_15.js"></script>
-        <script src="data/KimberleyOutcrop_16.js"></script>
-        <script src="data/BirdReefOutcrop_17.js"></script>
-        <script src="data/WestWitsBoundary_18.js"></script>
-        <script src="data/WestWitsBoundaryPoints_19.js"></script>
-        <script src="data/FARMBOUNDARY_20.js"></script>
+        <script src="data/TransmissionPipeline_1.js"></script>
+        <script src="data/DistributionPipeline_2.js"></script>
+        <script src="data/SouthReefOpencast_3.js"></script>
+        <script src="data/RugbyClubMRL_4.js"></script>
+        <script src="data/RugbyClubMainReef_5.js"></script>
+        <script src="data/MonaLiza_6.js"></script>
+        <script src="data/MiningPermitArea_7.js"></script>
+        <script src="data/MainReefOpencast_8.js"></script>
+        <script src="data/KimberleyReefWest_9.js"></script>
+        <script src="data/KimberleyReefEast_10.js"></script>
+        <script src="data/SouthReefOutcrop_11.js"></script>
+        <script src="data/MRL_12.js"></script>
+        <script src="data/MainReefOutcrop_13.js"></script>
+        <script src="data/KimberleyOutcrop_14.js"></script>
+        <script src="data/BirdReefOutcrop_15.js"></script>
+        <script src="data/WestWitsBoundary_16.js"></script>
+        <script src="data/WestWitsBoundaryPoints_17.js"></script>
+        <script src="data/C18001Farms_18.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -103,80 +101,12 @@
     });
         bounds_group.addLayer(layer_RandQuestSyndicateArea_0);
         map.addLayer(layer_RandQuestSyndicateArea_0);
-        function pop_RQSPointsWG27_1(feature, layer) {
+        function pop_TransmissionPipeline_1(feature, layer) {
         }
 
-        function style_RQSPointsWG27_1_0() {
+        function style_TransmissionPipeline_1_0() {
             return {
-                pane: 'pane_RQSPointsWG27_1',
-                radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1,
-                fillOpacity: 1,
-                fillColor: 'rgba(49,249,3,1.0)',
-            }
-        }
-        map.createPane('pane_RQSPointsWG27_1');
-        map.getPane('pane_RQSPointsWG27_1').style.zIndex = 401;
-        map.getPane('pane_RQSPointsWG27_1').style['mix-blend-mode'] = 'normal';
-        var layer_RQSPointsWG27_1 = new L.geoJson(json_RQSPointsWG27_1, {
-            attribution: '<a href=""></a>',
-            pane: 'pane_RQSPointsWG27_1',
-            onEachFeature: pop_RQSPointsWG27_1,
-            pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_RQSPointsWG27_1_0(feature));
-            },
-        });
-        bounds_group.addLayer(layer_RQSPointsWG27_1);
-        map.addLayer(layer_RQSPointsWG27_1);
-        function pop_RQSPointsWG29_2(feature, layer) {
-        }
-
-        function style_RQSPointsWG29_2_0() {
-            return {
-                pane: 'pane_RQSPointsWG29_2',
-                radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1,
-                fillOpacity: 1,
-                fillColor: 'rgba(5,255,1,1.0)',
-            }
-        }
-        map.createPane('pane_RQSPointsWG29_2');
-        map.getPane('pane_RQSPointsWG29_2').style.zIndex = 402;
-        map.getPane('pane_RQSPointsWG29_2').style['mix-blend-mode'] = 'normal';
-        var layer_RQSPointsWG29_2 = new L.geoJson(json_RQSPointsWG29_2, {
-            attribution: '<a href=""></a>',
-            pane: 'pane_RQSPointsWG29_2',
-            onEachFeature: pop_RQSPointsWG29_2,
-            pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_RQSPointsWG29_2_0(feature));
-            },
-        });
-        bounds_group.addLayer(layer_RQSPointsWG29_2);
-        map.addLayer(layer_RQSPointsWG29_2);
-        function pop_TransmissionPipeline_3(feature, layer) {
-        }
-
-        function style_TransmissionPipeline_3_0() {
-            return {
-                pane: 'pane_TransmissionPipeline_3',
+                pane: 'pane_TransmissionPipeline_1',
                 opacity: 1,
                 color: 'rgba(255,251,1,1.0)',
                 dashArray: '10,5',
@@ -186,23 +116,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_TransmissionPipeline_3');
-        map.getPane('pane_TransmissionPipeline_3').style.zIndex = 403;
-        map.getPane('pane_TransmissionPipeline_3').style['mix-blend-mode'] = 'normal';
-    var layer_TransmissionPipeline_3 = new L.geoJson(json_TransmissionPipeline_3, {
+        map.createPane('pane_TransmissionPipeline_1');
+        map.getPane('pane_TransmissionPipeline_1').style.zIndex = 401;
+        map.getPane('pane_TransmissionPipeline_1').style['mix-blend-mode'] = 'normal';
+    var layer_TransmissionPipeline_1 = new L.geoJson(json_TransmissionPipeline_1, {
         attribution: '<a href=""></a>',
-        pane: 'pane_TransmissionPipeline_3',
-        onEachFeature: pop_TransmissionPipeline_3,
-        style: style_TransmissionPipeline_3_0,
+        pane: 'pane_TransmissionPipeline_1',
+        onEachFeature: pop_TransmissionPipeline_1,
+        style: style_TransmissionPipeline_1_0,
     });
-        bounds_group.addLayer(layer_TransmissionPipeline_3);
-        map.addLayer(layer_TransmissionPipeline_3);
-        function pop_DistributionPipeline_4(feature, layer) {
+        bounds_group.addLayer(layer_TransmissionPipeline_1);
+        map.addLayer(layer_TransmissionPipeline_1);
+        function pop_DistributionPipeline_2(feature, layer) {
         }
 
-        function style_DistributionPipeline_4_0() {
+        function style_DistributionPipeline_2_0() {
             return {
-                pane: 'pane_DistributionPipeline_4',
+                pane: 'pane_DistributionPipeline_2',
                 opacity: 1,
                 color: 'rgba(1,255,13,1.0)',
                 dashArray: '1,5',
@@ -212,23 +142,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_DistributionPipeline_4');
-        map.getPane('pane_DistributionPipeline_4').style.zIndex = 404;
-        map.getPane('pane_DistributionPipeline_4').style['mix-blend-mode'] = 'normal';
-    var layer_DistributionPipeline_4 = new L.geoJson(json_DistributionPipeline_4, {
+        map.createPane('pane_DistributionPipeline_2');
+        map.getPane('pane_DistributionPipeline_2').style.zIndex = 402;
+        map.getPane('pane_DistributionPipeline_2').style['mix-blend-mode'] = 'normal';
+    var layer_DistributionPipeline_2 = new L.geoJson(json_DistributionPipeline_2, {
         attribution: '<a href=""></a>',
-        pane: 'pane_DistributionPipeline_4',
-        onEachFeature: pop_DistributionPipeline_4,
-        style: style_DistributionPipeline_4_0,
+        pane: 'pane_DistributionPipeline_2',
+        onEachFeature: pop_DistributionPipeline_2,
+        style: style_DistributionPipeline_2_0,
     });
-        bounds_group.addLayer(layer_DistributionPipeline_4);
-        map.addLayer(layer_DistributionPipeline_4);
-        function pop_SouthReefOpencast_5(feature, layer) {
+        bounds_group.addLayer(layer_DistributionPipeline_2);
+        map.addLayer(layer_DistributionPipeline_2);
+        function pop_SouthReefOpencast_3(feature, layer) {
         }
 
-        function style_SouthReefOpencast_5_0() {
+        function style_SouthReefOpencast_3_0() {
             return {
-                pane: 'pane_SouthReefOpencast_5',
+                pane: 'pane_SouthReefOpencast_3',
                 opacity: 1,
                 color: 'rgba(1,255,226,1.0)',
                 dashArray: '',
@@ -239,23 +169,23 @@
                 fillColor: 'rgba(1,255,226,0.0)',
             }
         }
-        map.createPane('pane_SouthReefOpencast_5');
-        map.getPane('pane_SouthReefOpencast_5').style.zIndex = 405;
-        map.getPane('pane_SouthReefOpencast_5').style['mix-blend-mode'] = 'normal';
-    var layer_SouthReefOpencast_5 = new L.geoJson(json_SouthReefOpencast_5, {
+        map.createPane('pane_SouthReefOpencast_3');
+        map.getPane('pane_SouthReefOpencast_3').style.zIndex = 403;
+        map.getPane('pane_SouthReefOpencast_3').style['mix-blend-mode'] = 'normal';
+    var layer_SouthReefOpencast_3 = new L.geoJson(json_SouthReefOpencast_3, {
         attribution: '<a href=""></a>',
-        pane: 'pane_SouthReefOpencast_5',
-        onEachFeature: pop_SouthReefOpencast_5,
-        style: style_SouthReefOpencast_5_0,
+        pane: 'pane_SouthReefOpencast_3',
+        onEachFeature: pop_SouthReefOpencast_3,
+        style: style_SouthReefOpencast_3_0,
     });
-        bounds_group.addLayer(layer_SouthReefOpencast_5);
-        map.addLayer(layer_SouthReefOpencast_5);
-        function pop_RugbyClubMRL_6(feature, layer) {
+        bounds_group.addLayer(layer_SouthReefOpencast_3);
+        map.addLayer(layer_SouthReefOpencast_3);
+        function pop_RugbyClubMRL_4(feature, layer) {
         }
 
-        function style_RugbyClubMRL_6_0() {
+        function style_RugbyClubMRL_4_0() {
             return {
-                pane: 'pane_RugbyClubMRL_6',
+                pane: 'pane_RugbyClubMRL_4',
                 opacity: 1,
                 color: 'rgba(255,127,0,1.0)',
                 dashArray: '',
@@ -266,23 +196,23 @@
                 fillColor: 'rgba(163,73,127,0.0)',
             }
         }
-        map.createPane('pane_RugbyClubMRL_6');
-        map.getPane('pane_RugbyClubMRL_6').style.zIndex = 406;
-        map.getPane('pane_RugbyClubMRL_6').style['mix-blend-mode'] = 'normal';
-    var layer_RugbyClubMRL_6 = new L.geoJson(json_RugbyClubMRL_6, {
+        map.createPane('pane_RugbyClubMRL_4');
+        map.getPane('pane_RugbyClubMRL_4').style.zIndex = 404;
+        map.getPane('pane_RugbyClubMRL_4').style['mix-blend-mode'] = 'normal';
+    var layer_RugbyClubMRL_4 = new L.geoJson(json_RugbyClubMRL_4, {
         attribution: '<a href=""></a>',
-        pane: 'pane_RugbyClubMRL_6',
-        onEachFeature: pop_RugbyClubMRL_6,
-        style: style_RugbyClubMRL_6_0,
+        pane: 'pane_RugbyClubMRL_4',
+        onEachFeature: pop_RugbyClubMRL_4,
+        style: style_RugbyClubMRL_4_0,
     });
-        bounds_group.addLayer(layer_RugbyClubMRL_6);
-        map.addLayer(layer_RugbyClubMRL_6);
-        function pop_RugbyClubMainReef_7(feature, layer) {
+        bounds_group.addLayer(layer_RugbyClubMRL_4);
+        map.addLayer(layer_RugbyClubMRL_4);
+        function pop_RugbyClubMainReef_5(feature, layer) {
         }
 
-        function style_RugbyClubMainReef_7_0() {
+        function style_RugbyClubMainReef_5_0() {
             return {
-                pane: 'pane_RugbyClubMainReef_7',
+                pane: 'pane_RugbyClubMainReef_5',
                 opacity: 1,
                 color: 'rgba(49,139,217,1.0)',
                 dashArray: '',
@@ -293,23 +223,23 @@
                 fillColor: 'rgba(150,44,141,0.0)',
             }
         }
-        map.createPane('pane_RugbyClubMainReef_7');
-        map.getPane('pane_RugbyClubMainReef_7').style.zIndex = 407;
-        map.getPane('pane_RugbyClubMainReef_7').style['mix-blend-mode'] = 'normal';
-    var layer_RugbyClubMainReef_7 = new L.geoJson(json_RugbyClubMainReef_7, {
+        map.createPane('pane_RugbyClubMainReef_5');
+        map.getPane('pane_RugbyClubMainReef_5').style.zIndex = 405;
+        map.getPane('pane_RugbyClubMainReef_5').style['mix-blend-mode'] = 'normal';
+    var layer_RugbyClubMainReef_5 = new L.geoJson(json_RugbyClubMainReef_5, {
         attribution: '<a href=""></a>',
-        pane: 'pane_RugbyClubMainReef_7',
-        onEachFeature: pop_RugbyClubMainReef_7,
-        style: style_RugbyClubMainReef_7_0,
+        pane: 'pane_RugbyClubMainReef_5',
+        onEachFeature: pop_RugbyClubMainReef_5,
+        style: style_RugbyClubMainReef_5_0,
     });
-        bounds_group.addLayer(layer_RugbyClubMainReef_7);
-        map.addLayer(layer_RugbyClubMainReef_7);
-        function pop_MonaLiza_8(feature, layer) {
+        bounds_group.addLayer(layer_RugbyClubMainReef_5);
+        map.addLayer(layer_RugbyClubMainReef_5);
+        function pop_MonaLiza_6(feature, layer) {
         }
 
-        function style_MonaLiza_8_0() {
+        function style_MonaLiza_6_0() {
             return {
-                pane: 'pane_MonaLiza_8',
+                pane: 'pane_MonaLiza_6',
                 opacity: 1,
                 color: 'rgba(176,165,60,1.0)',
                 dashArray: '',
@@ -320,23 +250,23 @@
                 fillColor: 'rgba(86,130,41,0.0)',
             }
         }
-        map.createPane('pane_MonaLiza_8');
-        map.getPane('pane_MonaLiza_8').style.zIndex = 408;
-        map.getPane('pane_MonaLiza_8').style['mix-blend-mode'] = 'normal';
-    var layer_MonaLiza_8 = new L.geoJson(json_MonaLiza_8, {
+        map.createPane('pane_MonaLiza_6');
+        map.getPane('pane_MonaLiza_6').style.zIndex = 406;
+        map.getPane('pane_MonaLiza_6').style['mix-blend-mode'] = 'normal';
+    var layer_MonaLiza_6 = new L.geoJson(json_MonaLiza_6, {
         attribution: '<a href=""></a>',
-        pane: 'pane_MonaLiza_8',
-        onEachFeature: pop_MonaLiza_8,
-        style: style_MonaLiza_8_0,
+        pane: 'pane_MonaLiza_6',
+        onEachFeature: pop_MonaLiza_6,
+        style: style_MonaLiza_6_0,
     });
-        bounds_group.addLayer(layer_MonaLiza_8);
-        map.addLayer(layer_MonaLiza_8);
-        function pop_MiningPermitArea_9(feature, layer) {
+        bounds_group.addLayer(layer_MonaLiza_6);
+        map.addLayer(layer_MonaLiza_6);
+        function pop_MiningPermitArea_7(feature, layer) {
         }
 
-        function style_MiningPermitArea_9_0() {
+        function style_MiningPermitArea_7_0() {
             return {
-                pane: 'pane_MiningPermitArea_9',
+                pane: 'pane_MiningPermitArea_7',
                 opacity: 1,
                 color: 'rgba(29,162,0,1.0)',
                 dashArray: '',
@@ -347,23 +277,23 @@
                 fillColor: 'rgba(122,140,83,0.0)',
             }
         }
-        map.createPane('pane_MiningPermitArea_9');
-        map.getPane('pane_MiningPermitArea_9').style.zIndex = 409;
-        map.getPane('pane_MiningPermitArea_9').style['mix-blend-mode'] = 'normal';
-    var layer_MiningPermitArea_9 = new L.geoJson(json_MiningPermitArea_9, {
+        map.createPane('pane_MiningPermitArea_7');
+        map.getPane('pane_MiningPermitArea_7').style.zIndex = 407;
+        map.getPane('pane_MiningPermitArea_7').style['mix-blend-mode'] = 'normal';
+    var layer_MiningPermitArea_7 = new L.geoJson(json_MiningPermitArea_7, {
         attribution: '<a href=""></a>',
-        pane: 'pane_MiningPermitArea_9',
-        onEachFeature: pop_MiningPermitArea_9,
-        style: style_MiningPermitArea_9_0,
+        pane: 'pane_MiningPermitArea_7',
+        onEachFeature: pop_MiningPermitArea_7,
+        style: style_MiningPermitArea_7_0,
     });
-        bounds_group.addLayer(layer_MiningPermitArea_9);
-        map.addLayer(layer_MiningPermitArea_9);
-        function pop_MainReefOpencast_10(feature, layer) {
+        bounds_group.addLayer(layer_MiningPermitArea_7);
+        map.addLayer(layer_MiningPermitArea_7);
+        function pop_MainReefOpencast_8(feature, layer) {
         }
 
-        function style_MainReefOpencast_10_0() {
+        function style_MainReefOpencast_8_0() {
             return {
-                pane: 'pane_MainReefOpencast_10',
+                pane: 'pane_MainReefOpencast_8',
                 opacity: 1,
                 color: 'rgba(235,132,47,1.0)',
                 dashArray: '',
@@ -374,23 +304,23 @@
                 fillColor: 'rgba(232,172,251,0.0)',
             }
         }
-        map.createPane('pane_MainReefOpencast_10');
-        map.getPane('pane_MainReefOpencast_10').style.zIndex = 410;
-        map.getPane('pane_MainReefOpencast_10').style['mix-blend-mode'] = 'normal';
-    var layer_MainReefOpencast_10 = new L.geoJson(json_MainReefOpencast_10, {
+        map.createPane('pane_MainReefOpencast_8');
+        map.getPane('pane_MainReefOpencast_8').style.zIndex = 408;
+        map.getPane('pane_MainReefOpencast_8').style['mix-blend-mode'] = 'normal';
+    var layer_MainReefOpencast_8 = new L.geoJson(json_MainReefOpencast_8, {
         attribution: '<a href=""></a>',
-        pane: 'pane_MainReefOpencast_10',
-        onEachFeature: pop_MainReefOpencast_10,
-        style: style_MainReefOpencast_10_0,
+        pane: 'pane_MainReefOpencast_8',
+        onEachFeature: pop_MainReefOpencast_8,
+        style: style_MainReefOpencast_8_0,
     });
-        bounds_group.addLayer(layer_MainReefOpencast_10);
-        map.addLayer(layer_MainReefOpencast_10);
-        function pop_KimberleyReefWest_11(feature, layer) {
+        bounds_group.addLayer(layer_MainReefOpencast_8);
+        map.addLayer(layer_MainReefOpencast_8);
+        function pop_KimberleyReefWest_9(feature, layer) {
         }
 
-        function style_KimberleyReefWest_11_0() {
+        function style_KimberleyReefWest_9_0() {
             return {
-                pane: 'pane_KimberleyReefWest_11',
+                pane: 'pane_KimberleyReefWest_9',
                 opacity: 1,
                 color: 'rgba(0,0,255,1.0)',
                 dashArray: '',
@@ -401,23 +331,23 @@
                 fillColor: 'rgba(121,3,189,0.0)',
             }
         }
-        map.createPane('pane_KimberleyReefWest_11');
-        map.getPane('pane_KimberleyReefWest_11').style.zIndex = 411;
-        map.getPane('pane_KimberleyReefWest_11').style['mix-blend-mode'] = 'normal';
-    var layer_KimberleyReefWest_11 = new L.geoJson(json_KimberleyReefWest_11, {
+        map.createPane('pane_KimberleyReefWest_9');
+        map.getPane('pane_KimberleyReefWest_9').style.zIndex = 409;
+        map.getPane('pane_KimberleyReefWest_9').style['mix-blend-mode'] = 'normal';
+    var layer_KimberleyReefWest_9 = new L.geoJson(json_KimberleyReefWest_9, {
         attribution: '<a href=""></a>',
-        pane: 'pane_KimberleyReefWest_11',
-        onEachFeature: pop_KimberleyReefWest_11,
-        style: style_KimberleyReefWest_11_0,
+        pane: 'pane_KimberleyReefWest_9',
+        onEachFeature: pop_KimberleyReefWest_9,
+        style: style_KimberleyReefWest_9_0,
     });
-        bounds_group.addLayer(layer_KimberleyReefWest_11);
-        map.addLayer(layer_KimberleyReefWest_11);
-        function pop_KimberleyReefEast_12(feature, layer) {
+        bounds_group.addLayer(layer_KimberleyReefWest_9);
+        map.addLayer(layer_KimberleyReefWest_9);
+        function pop_KimberleyReefEast_10(feature, layer) {
         }
 
-        function style_KimberleyReefEast_12_0() {
+        function style_KimberleyReefEast_10_0() {
             return {
-                pane: 'pane_KimberleyReefEast_12',
+                pane: 'pane_KimberleyReefEast_10',
                 opacity: 1,
                 color: 'rgba(210,17,165,1.0)',
                 dashArray: '',
@@ -428,23 +358,23 @@
                 fillColor: 'rgba(129,237,13,0.0)',
             }
         }
-        map.createPane('pane_KimberleyReefEast_12');
-        map.getPane('pane_KimberleyReefEast_12').style.zIndex = 412;
-        map.getPane('pane_KimberleyReefEast_12').style['mix-blend-mode'] = 'normal';
-    var layer_KimberleyReefEast_12 = new L.geoJson(json_KimberleyReefEast_12, {
+        map.createPane('pane_KimberleyReefEast_10');
+        map.getPane('pane_KimberleyReefEast_10').style.zIndex = 410;
+        map.getPane('pane_KimberleyReefEast_10').style['mix-blend-mode'] = 'normal';
+    var layer_KimberleyReefEast_10 = new L.geoJson(json_KimberleyReefEast_10, {
         attribution: '<a href=""></a>',
-        pane: 'pane_KimberleyReefEast_12',
-        onEachFeature: pop_KimberleyReefEast_12,
-        style: style_KimberleyReefEast_12_0,
+        pane: 'pane_KimberleyReefEast_10',
+        onEachFeature: pop_KimberleyReefEast_10,
+        style: style_KimberleyReefEast_10_0,
     });
-        bounds_group.addLayer(layer_KimberleyReefEast_12);
-        map.addLayer(layer_KimberleyReefEast_12);
-        function pop_SouthReefOutcrop_13(feature, layer) {
+        bounds_group.addLayer(layer_KimberleyReefEast_10);
+        map.addLayer(layer_KimberleyReefEast_10);
+        function pop_SouthReefOutcrop_11(feature, layer) {
         }
 
-        function style_SouthReefOutcrop_13_0() {
+        function style_SouthReefOutcrop_11_0() {
             return {
-                pane: 'pane_SouthReefOutcrop_13',
+                pane: 'pane_SouthReefOutcrop_11',
                 opacity: 1,
                 color: 'rgba(147,28,83,1.0)',
                 dashArray: '',
@@ -454,23 +384,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_SouthReefOutcrop_13');
-        map.getPane('pane_SouthReefOutcrop_13').style.zIndex = 413;
-        map.getPane('pane_SouthReefOutcrop_13').style['mix-blend-mode'] = 'normal';
-    var layer_SouthReefOutcrop_13 = new L.geoJson(json_SouthReefOutcrop_13, {
+        map.createPane('pane_SouthReefOutcrop_11');
+        map.getPane('pane_SouthReefOutcrop_11').style.zIndex = 411;
+        map.getPane('pane_SouthReefOutcrop_11').style['mix-blend-mode'] = 'normal';
+    var layer_SouthReefOutcrop_11 = new L.geoJson(json_SouthReefOutcrop_11, {
         attribution: '<a href=""></a>',
-        pane: 'pane_SouthReefOutcrop_13',
-        onEachFeature: pop_SouthReefOutcrop_13,
-        style: style_SouthReefOutcrop_13_0,
+        pane: 'pane_SouthReefOutcrop_11',
+        onEachFeature: pop_SouthReefOutcrop_11,
+        style: style_SouthReefOutcrop_11_0,
     });
-        bounds_group.addLayer(layer_SouthReefOutcrop_13);
-        map.addLayer(layer_SouthReefOutcrop_13);
-        function pop_MRL_14(feature, layer) {
+        bounds_group.addLayer(layer_SouthReefOutcrop_11);
+        map.addLayer(layer_SouthReefOutcrop_11);
+        function pop_MRL_12(feature, layer) {
         }
 
-        function style_MRL_14_0() {
+        function style_MRL_12_0() {
             return {
-                pane: 'pane_MRL_14',
+                pane: 'pane_MRL_12',
                 opacity: 1,
                 color: 'rgba(156,65,23,1.0)',
                 dashArray: '',
@@ -480,23 +410,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_MRL_14');
-        map.getPane('pane_MRL_14').style.zIndex = 414;
-        map.getPane('pane_MRL_14').style['mix-blend-mode'] = 'normal';
-    var layer_MRL_14 = new L.geoJson(json_MRL_14, {
+        map.createPane('pane_MRL_12');
+        map.getPane('pane_MRL_12').style.zIndex = 412;
+        map.getPane('pane_MRL_12').style['mix-blend-mode'] = 'normal';
+    var layer_MRL_12 = new L.geoJson(json_MRL_12, {
         attribution: '<a href=""></a>',
-        pane: 'pane_MRL_14',
-        onEachFeature: pop_MRL_14,
-        style: style_MRL_14_0,
+        pane: 'pane_MRL_12',
+        onEachFeature: pop_MRL_12,
+        style: style_MRL_12_0,
     });
-        bounds_group.addLayer(layer_MRL_14);
-        map.addLayer(layer_MRL_14);
-        function pop_MainReefOutcrop_15(feature, layer) {
+        bounds_group.addLayer(layer_MRL_12);
+        map.addLayer(layer_MRL_12);
+        function pop_MainReefOutcrop_13(feature, layer) {
         }
 
-        function style_MainReefOutcrop_15_0() {
+        function style_MainReefOutcrop_13_0() {
             return {
-                pane: 'pane_MainReefOutcrop_15',
+                pane: 'pane_MainReefOutcrop_13',
                 opacity: 1,
                 color: 'rgba(244,51,48,1.0)',
                 dashArray: '',
@@ -506,23 +436,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_MainReefOutcrop_15');
-        map.getPane('pane_MainReefOutcrop_15').style.zIndex = 415;
-        map.getPane('pane_MainReefOutcrop_15').style['mix-blend-mode'] = 'normal';
-    var layer_MainReefOutcrop_15 = new L.geoJson(json_MainReefOutcrop_15, {
+        map.createPane('pane_MainReefOutcrop_13');
+        map.getPane('pane_MainReefOutcrop_13').style.zIndex = 413;
+        map.getPane('pane_MainReefOutcrop_13').style['mix-blend-mode'] = 'normal';
+    var layer_MainReefOutcrop_13 = new L.geoJson(json_MainReefOutcrop_13, {
         attribution: '<a href=""></a>',
-        pane: 'pane_MainReefOutcrop_15',
-        onEachFeature: pop_MainReefOutcrop_15,
-        style: style_MainReefOutcrop_15_0,
+        pane: 'pane_MainReefOutcrop_13',
+        onEachFeature: pop_MainReefOutcrop_13,
+        style: style_MainReefOutcrop_13_0,
     });
-        bounds_group.addLayer(layer_MainReefOutcrop_15);
-        map.addLayer(layer_MainReefOutcrop_15);
-        function pop_KimberleyOutcrop_16(feature, layer) {
+        bounds_group.addLayer(layer_MainReefOutcrop_13);
+        map.addLayer(layer_MainReefOutcrop_13);
+        function pop_KimberleyOutcrop_14(feature, layer) {
         }
 
-        function style_KimberleyOutcrop_16_0() {
+        function style_KimberleyOutcrop_14_0() {
             return {
-                pane: 'pane_KimberleyOutcrop_16',
+                pane: 'pane_KimberleyOutcrop_14',
                 opacity: 1,
                 color: 'rgba(136,197,189,1.0)',
                 dashArray: '',
@@ -532,23 +462,23 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_KimberleyOutcrop_16');
-        map.getPane('pane_KimberleyOutcrop_16').style.zIndex = 416;
-        map.getPane('pane_KimberleyOutcrop_16').style['mix-blend-mode'] = 'normal';
-    var layer_KimberleyOutcrop_16 = new L.geoJson(json_KimberleyOutcrop_16, {
+        map.createPane('pane_KimberleyOutcrop_14');
+        map.getPane('pane_KimberleyOutcrop_14').style.zIndex = 414;
+        map.getPane('pane_KimberleyOutcrop_14').style['mix-blend-mode'] = 'normal';
+    var layer_KimberleyOutcrop_14 = new L.geoJson(json_KimberleyOutcrop_14, {
         attribution: '<a href=""></a>',
-        pane: 'pane_KimberleyOutcrop_16',
-        onEachFeature: pop_KimberleyOutcrop_16,
-        style: style_KimberleyOutcrop_16_0,
+        pane: 'pane_KimberleyOutcrop_14',
+        onEachFeature: pop_KimberleyOutcrop_14,
+        style: style_KimberleyOutcrop_14_0,
     });
-        bounds_group.addLayer(layer_KimberleyOutcrop_16);
-        map.addLayer(layer_KimberleyOutcrop_16);
-        function pop_BirdReefOutcrop_17(feature, layer) {
+        bounds_group.addLayer(layer_KimberleyOutcrop_14);
+        map.addLayer(layer_KimberleyOutcrop_14);
+        function pop_BirdReefOutcrop_15(feature, layer) {
         }
 
-        function style_BirdReefOutcrop_17_0() {
+        function style_BirdReefOutcrop_15_0() {
             return {
-                pane: 'pane_BirdReefOutcrop_17',
+                pane: 'pane_BirdReefOutcrop_15',
                 opacity: 1,
                 color: 'rgba(101,171,167,1.0)',
                 dashArray: '',
@@ -558,18 +488,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_BirdReefOutcrop_17');
-        map.getPane('pane_BirdReefOutcrop_17').style.zIndex = 417;
-        map.getPane('pane_BirdReefOutcrop_17').style['mix-blend-mode'] = 'normal';
-    var layer_BirdReefOutcrop_17 = new L.geoJson(json_BirdReefOutcrop_17, {
+        map.createPane('pane_BirdReefOutcrop_15');
+        map.getPane('pane_BirdReefOutcrop_15').style.zIndex = 415;
+        map.getPane('pane_BirdReefOutcrop_15').style['mix-blend-mode'] = 'normal';
+    var layer_BirdReefOutcrop_15 = new L.geoJson(json_BirdReefOutcrop_15, {
         attribution: '<a href=""></a>',
-        pane: 'pane_BirdReefOutcrop_17',
-        onEachFeature: pop_BirdReefOutcrop_17,
-        style: style_BirdReefOutcrop_17_0,
+        pane: 'pane_BirdReefOutcrop_15',
+        onEachFeature: pop_BirdReefOutcrop_15,
+        style: style_BirdReefOutcrop_15_0,
     });
-        bounds_group.addLayer(layer_BirdReefOutcrop_17);
-        map.addLayer(layer_BirdReefOutcrop_17);
-        function pop_WestWitsBoundary_18(feature, layer) {
+        bounds_group.addLayer(layer_BirdReefOutcrop_15);
+        map.addLayer(layer_BirdReefOutcrop_15);
+        function pop_WestWitsBoundary_16(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">id</th>\
@@ -583,9 +513,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_WestWitsBoundary_18_0() {
+        function style_WestWitsBoundary_16_0() {
             return {
-                pane: 'pane_WestWitsBoundary_18',
+                pane: 'pane_WestWitsBoundary_16',
                 opacity: 1,
                 color: 'rgba(0,63,254,1.0)',
                 dashArray: '',
@@ -596,18 +526,18 @@
                 fillColor: 'rgba(0,63,254,0.0)',
             }
         }
-        map.createPane('pane_WestWitsBoundary_18');
-        map.getPane('pane_WestWitsBoundary_18').style.zIndex = 418;
-        map.getPane('pane_WestWitsBoundary_18').style['mix-blend-mode'] = 'normal';
-    var layer_WestWitsBoundary_18 = new L.geoJson(json_WestWitsBoundary_18, {
+        map.createPane('pane_WestWitsBoundary_16');
+        map.getPane('pane_WestWitsBoundary_16').style.zIndex = 416;
+        map.getPane('pane_WestWitsBoundary_16').style['mix-blend-mode'] = 'normal';
+    var layer_WestWitsBoundary_16 = new L.geoJson(json_WestWitsBoundary_16, {
         attribution: '<a href=""></a>',
-        pane: 'pane_WestWitsBoundary_18',
-        onEachFeature: pop_WestWitsBoundary_18,
-        style: style_WestWitsBoundary_18_0,
+        pane: 'pane_WestWitsBoundary_16',
+        onEachFeature: pop_WestWitsBoundary_16,
+        style: style_WestWitsBoundary_16_0,
     });
-        bounds_group.addLayer(layer_WestWitsBoundary_18);
-        map.addLayer(layer_WestWitsBoundary_18);
-        function pop_WestWitsBoundaryPoints_19(feature, layer) {
+        bounds_group.addLayer(layer_WestWitsBoundary_16);
+        map.addLayer(layer_WestWitsBoundary_16);
+        function pop_WestWitsBoundaryPoints_17(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['field_1'] !== null ? Autolinker.link(String(feature.properties['field_1'])) : '') + '</td>\
@@ -622,9 +552,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_WestWitsBoundaryPoints_19_0() {
+        function style_WestWitsBoundaryPoints_17_0() {
             return {
-                pane: 'pane_WestWitsBoundaryPoints_19',
+                pane: 'pane_WestWitsBoundaryPoints_17',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -636,111 +566,87 @@
                 fillColor: 'rgba(13,50,152,1.0)',
             }
         }
-        map.createPane('pane_WestWitsBoundaryPoints_19');
-        map.getPane('pane_WestWitsBoundaryPoints_19').style.zIndex = 419;
-        map.getPane('pane_WestWitsBoundaryPoints_19').style['mix-blend-mode'] = 'normal';
-        var layer_WestWitsBoundaryPoints_19 = new L.geoJson(json_WestWitsBoundaryPoints_19, {
+        map.createPane('pane_WestWitsBoundaryPoints_17');
+        map.getPane('pane_WestWitsBoundaryPoints_17').style.zIndex = 417;
+        map.getPane('pane_WestWitsBoundaryPoints_17').style['mix-blend-mode'] = 'normal';
+        var layer_WestWitsBoundaryPoints_17 = new L.geoJson(json_WestWitsBoundaryPoints_17, {
             attribution: '<a href=""></a>',
-            pane: 'pane_WestWitsBoundaryPoints_19',
-            onEachFeature: pop_WestWitsBoundaryPoints_19,
+            pane: 'pane_WestWitsBoundaryPoints_17',
+            onEachFeature: pop_WestWitsBoundaryPoints_17,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_WestWitsBoundaryPoints_19_0(feature));
+                return L.circleMarker(latlng, style_WestWitsBoundaryPoints_17_0(feature));
             },
         });
-        bounds_group.addLayer(layer_WestWitsBoundaryPoints_19);
-        map.addLayer(layer_WestWitsBoundaryPoints_19);
-        function pop_FARMBOUNDARY_20(feature, layer) {
+        bounds_group.addLayer(layer_WestWitsBoundaryPoints_17);
+        map.addLayer(layer_WestWitsBoundaryPoints_17);
+        function pop_C18001Farms_18(feature, layer) {
             var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">ogc_fid</th>\
-                        <td>' + (feature.properties['ogc_fid'] !== null ? Autolinker.link(String(feature.properties['ogc_fid'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tag Value</th>\
-                        <td>' + (feature.properties['Tag Value'] !== null ? Autolinker.link(String(feature.properties['Tag Value'])) : '') + '</td>\
-                    </tr>\
                     <tr>\
                         <th scope="row">ID</th>\
                         <td>' + (feature.properties['ID'] !== null ? Autolinker.link(String(feature.properties['ID'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">SG diagram</th>\
-                        <td>' + (feature.properties['SG diagram'] !== null ? Autolinker.link(String(feature.properties['SG diagram'])) : '') + '</td>\
+                        <th scope="row">Farm</th>\
+                        <td>' + (feature.properties['Farm'] !== null ? Autolinker.link(String(feature.properties['Farm'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">SG General</th>\
-                        <td>' + (feature.properties['SG General'] !== null ? Autolinker.link(String(feature.properties['SG General'])) : '') + '</td>\
+                        <th scope="row">Owner</th>\
+                        <td>' + (feature.properties['Owner'] !== null ? Autolinker.link(String(feature.properties['Owner'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Zoning</th>\
+                        <td>' + (feature.properties['Zoning'] !== null ? Autolinker.link(String(feature.properties['Zoning'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Visual Use</th>\
                         <td>' + (feature.properties['Visual Use'] !== null ? Autolinker.link(String(feature.properties['Visual Use'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">City of JH</th>\
-                        <td>' + (feature.properties['City of JH'] !== null ? Autolinker.link(String(feature.properties['City of JH'])) : '') + '</td>\
+                        <th scope="row">Area(Ha)</th>\
+                        <td>' + (feature.properties['Area(Ha)'] !== null ? Autolinker.link(String(feature.properties['Area(Ha)'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Title Deed</th>\
-                        <td>' + (feature.properties['Title Deed'] !== null ? Autolinker.link(String(feature.properties['Title Deed'])) : '') + '</td>\
+                        <th scope="row">Type of Owner</th>\
+                        <td>' + (feature.properties['Type of Owner'] !== null ? Autolinker.link(String(feature.properties['Type of Owner'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Title Deed_1</th>\
-                        <td>' + (feature.properties['Title Deed_1'] !== null ? Autolinker.link(String(feature.properties['Title Deed_1'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Title Deed_2</th>\
-                        <td>' + (feature.properties['Title Deed_2'] !== null ? Autolinker.link(String(feature.properties['Title Deed_2'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Title Deed_3</th>\
-                        <td>' + (feature.properties['Title Deed_3'] !== null ? Autolinker.link(String(feature.properties['Title Deed_3'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Title Deed_4</th>\
-                        <td>' + (feature.properties['Title Deed_4'] !== null ? Autolinker.link(String(feature.properties['Title Deed_4'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Title Deed_5</th>\
-                        <td>' + (feature.properties['Title Deed_5'] !== null ? Autolinker.link(String(feature.properties['Title Deed_5'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Title Deed_6</th>\
-                        <td>' + (feature.properties['Title Deed_6'] !== null ? Autolinker.link(String(feature.properties['Title Deed_6'])) : '') + '</td>\
+                        <th scope="row">Notes</th>\
+                        <td>' + (feature.properties['Notes'] !== null ? Autolinker.link(String(feature.properties['Notes'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_FARMBOUNDARY_20_0() {
+        function style_C18001Farms_18_0() {
             return {
-                pane: 'pane_FARMBOUNDARY_20',
+                pane: 'pane_C18001Farms_18',
                 opacity: 1,
                 color: 'rgba(255,1,1,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0, 
+                weight: 3.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(183,158,227,0.0)',
+                fillColor: 'rgba(255,147,180,0.0)',
             }
         }
-        map.createPane('pane_FARMBOUNDARY_20');
-        map.getPane('pane_FARMBOUNDARY_20').style.zIndex = 420;
-        map.getPane('pane_FARMBOUNDARY_20').style['mix-blend-mode'] = 'normal';
-    var layer_FARMBOUNDARY_20 = new L.geoJson(json_FARMBOUNDARY_20, {
+        map.createPane('pane_C18001Farms_18');
+        map.getPane('pane_C18001Farms_18').style.zIndex = 418;
+        map.getPane('pane_C18001Farms_18').style['mix-blend-mode'] = 'normal';
+    var layer_C18001Farms_18 = new L.geoJson(json_C18001Farms_18, {
         attribution: '<a href=""></a>',
-        pane: 'pane_FARMBOUNDARY_20',
-        onEachFeature: pop_FARMBOUNDARY_20,
-        style: style_FARMBOUNDARY_20_0,
+        pane: 'pane_C18001Farms_18',
+        onEachFeature: pop_C18001Farms_18,
+        style: style_C18001Farms_18_0,
     });
-        bounds_group.addLayer(layer_FARMBOUNDARY_20);
-        map.addLayer(layer_FARMBOUNDARY_20);
+        bounds_group.addLayer(layer_C18001Farms_18);
+        map.addLayer(layer_C18001Farms_18);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/FARMBOUNDARY_20.png" /> FARM BOUNDARY': layer_FARMBOUNDARY_20,'<img src="legend/WestWitsBoundaryPoints_19.png" /> West Wits Boundary Points': layer_WestWitsBoundaryPoints_19,'<img src="legend/WestWitsBoundary_18.png" /> West Wits Boundary': layer_WestWitsBoundary_18,'<img src="legend/BirdReefOutcrop_17.png" /> Bird Reef Outcrop': layer_BirdReefOutcrop_17,'<img src="legend/KimberleyOutcrop_16.png" /> Kimberley Outcrop': layer_KimberleyOutcrop_16,'<img src="legend/MainReefOutcrop_15.png" /> Main Reef Outcrop': layer_MainReefOutcrop_15,'<img src="legend/MRL_14.png" /> MRL': layer_MRL_14,'<img src="legend/SouthReefOutcrop_13.png" /> South Reef Outcrop': layer_SouthReefOutcrop_13,'<img src="legend/KimberleyReefEast_12.png" /> Kimberley Reef East': layer_KimberleyReefEast_12,'<img src="legend/KimberleyReefWest_11.png" /> Kimberley Reef West': layer_KimberleyReefWest_11,'<img src="legend/MainReefOpencast_10.png" /> Main Reef Opencast': layer_MainReefOpencast_10,'<img src="legend/MiningPermitArea_9.png" /> Mining Permit Area': layer_MiningPermitArea_9,'<img src="legend/MonaLiza_8.png" /> Mona Liza': layer_MonaLiza_8,'<img src="legend/RugbyClubMainReef_7.png" /> Rugby Club Main Reef': layer_RugbyClubMainReef_7,'<img src="legend/RugbyClubMRL_6.png" /> Rugby Club MRL': layer_RugbyClubMRL_6,'<img src="legend/SouthReefOpencast_5.png" /> South Reef Opencast': layer_SouthReefOpencast_5,'<img src="legend/DistributionPipeline_4.png" /> Distribution Pipeline': layer_DistributionPipeline_4,'<img src="legend/TransmissionPipeline_3.png" /> Transmission Pipeline': layer_TransmissionPipeline_3,'<img src="legend/RQSPointsWG29_2.png" /> RQS Points WG 29': layer_RQSPointsWG29_2,'<img src="legend/RQSPointsWG27_1.png" /> RQS Points WG 27': layer_RQSPointsWG27_1,'<img src="legend/RandQuestSyndicateArea_0.png" /> Rand Quest Syndicate Area': layer_RandQuestSyndicateArea_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/C18001Farms_18.png" /> C18001 Farms': layer_C18001Farms_18,'<img src="legend/WestWitsBoundaryPoints_17.png" /> West Wits Boundary Points': layer_WestWitsBoundaryPoints_17,'<img src="legend/WestWitsBoundary_16.png" /> West Wits Boundary': layer_WestWitsBoundary_16,'<img src="legend/BirdReefOutcrop_15.png" /> Bird Reef Outcrop': layer_BirdReefOutcrop_15,'<img src="legend/KimberleyOutcrop_14.png" /> Kimberley Outcrop': layer_KimberleyOutcrop_14,'<img src="legend/MainReefOutcrop_13.png" /> Main Reef Outcrop': layer_MainReefOutcrop_13,'<img src="legend/MRL_12.png" /> MRL': layer_MRL_12,'<img src="legend/SouthReefOutcrop_11.png" /> South Reef Outcrop': layer_SouthReefOutcrop_11,'<img src="legend/KimberleyReefEast_10.png" /> Kimberley Reef East': layer_KimberleyReefEast_10,'<img src="legend/KimberleyReefWest_9.png" /> Kimberley Reef West': layer_KimberleyReefWest_9,'<img src="legend/MainReefOpencast_8.png" /> Main Reef Opencast': layer_MainReefOpencast_8,'<img src="legend/MiningPermitArea_7.png" /> Mining Permit Area': layer_MiningPermitArea_7,'<img src="legend/MonaLiza_6.png" /> Mona Liza': layer_MonaLiza_6,'<img src="legend/RugbyClubMainReef_5.png" /> Rugby Club Main Reef': layer_RugbyClubMainReef_5,'<img src="legend/RugbyClubMRL_4.png" /> Rugby Club MRL': layer_RugbyClubMRL_4,'<img src="legend/SouthReefOpencast_3.png" /> South Reef Opencast': layer_SouthReefOpencast_3,'<img src="legend/DistributionPipeline_2.png" /> Distribution Pipeline': layer_DistributionPipeline_2,'<img src="legend/TransmissionPipeline_1.png" /> Transmission Pipeline': layer_TransmissionPipeline_1,'<img src="legend/RandQuestSyndicateArea_0.png" /> Rand Quest Syndicate Area': layer_RandQuestSyndicateArea_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
